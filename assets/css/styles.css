@@ -137,6 +137,7 @@ ul.contact-list li {
   float:left;
   margin-right:25px;
   text-align:center;
+  width:50px;
 }
 
 .footer{
@@ -175,4 +176,141 @@ ul.contact-list li {
 
 .row-striped a{
   color:#101010;
+}
+
+/*Event Styles*/
+.row.event-item {
+  background-color:white;
+  padding:15px;
+  margin:25px 0;
+}
+
+@media (max-width: 992px) {
+  .event-date h2 {
+    color:white;
+    background-color:#cd3333;
+    border-radius:5px;
+    text-align:center;
+    padding:10px;
+    width:100%;
+    font-size:70px;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+}
+
+@media (min-width: 1200px) {
+  .event-date h2 {
+    color:white;
+    background-color:#cd3333;
+    border-radius:5px;
+    text-align:center;
+    padding:20px;
+    width:100%;
+    font-size:70px;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+}
+
+@media (min-width: 300px) {
+  .event-date h2 {
+    padding:5px 1px;
+    width:100%;
+    font-size:24px;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+}
+
+@media (min-width: 768px) {
+  .event-date h2 {
+    padding:0px;
+    width:100%;
+    font-size:50px;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+}
+
+span.event-day {
+  text-align:center;
+  display:block;
+  font-size:30px;
+  font-weight:bold;
+}
+
+@media (min-width: 300px) {
+  span.event-day {
+    text-align:center;
+    display:block;
+    font-size:20px;
+    font-weight:bold;
+  }
+}
+
+@media (min-width: 300px) {
+  .event-info h1 {
+    font-size:24px;
+  }
+}
+
+@media (min-width: 576px) {
+  .event-info h1 {
+    font-size:32px;
+  }
+}
+
+ul.event-details {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+ul.event-details li {
+  float:left;
+  margin-right:15px;
+}
+
+@media (max-width: 299px) {
+  ul.event-details li {
+    float:left;
+    margin-right:5px;
+    font-size:13px;
+  }
+}
+
+.event-info p {
+  clear:both;
+}
+
+@media (max-width: 300px) {
+  .event-info p {
+    clear:both;
+    font-size:13px;
+  }
+}
+
+/*sponsors css*/
+ul.sponsors {
+  list-style-type:none;
+  margin-top:100px;
+}
+
+ul.sponsors li {
+  float:left;
+  margin:0 15px;
+}
+
+ul.sponsors li img {
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+  opacity:0.1;
+  transition:all 0.2s linear;
+}
+
+ul.sponsors li img:hover {
+  opacity:1;
+  -webkit-filter:grayscale(0%);
+  filter:grayscale(0%);
 }
