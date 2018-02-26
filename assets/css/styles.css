@@ -137,7 +137,6 @@ ul.contact-list li {
   float:left;
   margin-right:25px;
   text-align:center;
-  width:50px;
 }
 
 .footer{
@@ -147,6 +146,14 @@ ul.contact-list li {
 .resource-list{
   width:33%;
   float:left;
+}
+
+@media (max-width: 768px){
+  .resource-list{
+    width:100%;
+    display:block;
+    clear:both;
+  }
 }
 
 .resource-list a:link, .resource-list a:visited{
@@ -182,54 +189,21 @@ ul.contact-list li {
 .row.event-item {
   background-color:white;
   padding:15px;
-  margin:25px 0;
+  margin-bottom:25px;
 }
 
-@media (max-width: 992px) {
-  .event-date h2 {
-    color:white;
-    background-color:#cd3333;
-    border-radius:5px;
-    text-align:center;
-    padding:10px;
-    width:100%;
-    font-size:70px;
-    text-transform:uppercase;
-    font-weight:bold;
-  }
+.event-date h2 {
+  background-color:#cd3333;
+  color:white;
+  text-align:center;
+  border-radius:5px;
+  padding:15px 0;
+  font-size:50px;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 576px) {
   .event-date h2 {
-    color:white;
-    background-color:#cd3333;
-    border-radius:5px;
-    text-align:center;
-    padding:20px;
-    width:100%;
-    font-size:70px;
-    text-transform:uppercase;
-    font-weight:bold;
-  }
-}
-
-@media (min-width: 300px) {
-  .event-date h2 {
-    padding:5px 1px;
-    width:100%;
-    font-size:24px;
-    text-transform:uppercase;
-    font-weight:bold;
-  }
-}
-
-@media (min-width: 768px) {
-  .event-date h2 {
-    padding:0px;
-    width:100%;
-    font-size:50px;
-    text-transform:uppercase;
-    font-weight:bold;
+    border-radius:0px;
   }
 }
 
@@ -238,27 +212,6 @@ span.event-day {
   display:block;
   font-size:30px;
   font-weight:bold;
-}
-
-@media (min-width: 300px) {
-  span.event-day {
-    text-align:center;
-    display:block;
-    font-size:20px;
-    font-weight:bold;
-  }
-}
-
-@media (min-width: 300px) {
-  .event-info h1 {
-    font-size:24px;
-  }
-}
-
-@media (min-width: 576px) {
-  .event-info h1 {
-    font-size:32px;
-  }
 }
 
 ul.event-details {
@@ -272,24 +225,14 @@ ul.event-details li {
   margin-right:15px;
 }
 
-@media (max-width: 299px) {
-  ul.event-details li {
-    float:left;
-    margin-right:5px;
-    font-size:13px;
-  }
-}
-
 .event-info p {
   clear:both;
 }
 
-@media (max-width: 300px) {
-  .event-info p {
-    clear:both;
-    font-size:13px;
-  }
-}
+
+
+
+
 
 /*sponsors css*/
 ul.sponsors {
