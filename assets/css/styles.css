@@ -20,11 +20,11 @@ body {
 .intro-headline {
   font-size:30px;
   text-transform:uppercase;
-  letter-spacing:15px;
+  letter-spacing:5px;
   text-align:center;
   font-weight:600;
   padding-bottom:0px;
-  margin-bottom:0px;
+  margin-bottom:50px;
 }
 
 #intro p {
@@ -84,7 +84,7 @@ body {
   margin-top:200px;
 }
 
-#events h1, #team h1, #contact h1 {
+#events h1, #team h1, #contact h1, #comic h1 {
   color:#E4D9C4;
   text-align:center;
   font-size:120px;
@@ -457,3 +457,33 @@ ul.event-details li {
   }
 }
 
+/*comic section*/
+
+#comic{
+  margin:100px 0;
+}
+
+#comic i{
+  font-size:70px;
+}
+.read-more-button{
+  background-color:#090909;
+  display:block;
+  padding:20px;
+  text-align:center;
+  transition: all 0.2s linear;
+}
+
+.read-more-button:hover,
+.read-more-button a:hover{
+  color:#cd3333
+}
+
+#comic a{
+  color:white;
+  text-decoration:none;
+}
+
+#comic a:hover{
+  text-decoration:none;
+}
