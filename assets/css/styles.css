@@ -10,6 +10,7 @@ body {
   color:#E4D9C4;
   letter-spacing:0.4px;
   background-color:#101010;
+  padding-bottom:55px;
 }
 
 #intro-video{
@@ -33,7 +34,7 @@ body {
   text-align:center;
   font-weight:600;
   padding-bottom:0px;
-  margin-bottom:50px;
+  margin-bottom:15px;
 }
 
 #intro p {
@@ -43,7 +44,7 @@ body {
 }
 
 #about {
-  padding-top:160px;
+  padding-top:120px;
 }
 
 .container.about-us {
