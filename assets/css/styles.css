@@ -423,6 +423,11 @@ ul.event-details li {
   padding:0 4px;
 }
 
+.carousel-item h2{
+  color:white;
+  font-size:24px;
+}
+
 .column {
   -ms-flex:25%;
   flex:25%;
@@ -449,6 +454,84 @@ ul.event-details li {
   transition:all 0.2s linear;
 }
 
+.embedded{
+  margin-top:100px;
+  margin-bottom:100px;
+}
+
+.embedded a{
+  color:white;
+}
+
+.embedded a:hover{
+  text-decoration:none;
+  color:#cd3333;
+}
+
+/*Comic Slider*/
+.carousel {
+  padding: 20px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.carousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.carousel figure {
+  margin: 0;
+  width: 40%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0px;
+}
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.carousel nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
 
 
 @media (max-width: 800px) {
@@ -467,33 +550,3 @@ ul.event-details li {
   }
 }
 
-/*comic section*/
-
-#comic{
-  margin:100px 0;
-}
-
-#comic i{
-  font-size:70px;
-}
-.read-more-button{
-  background-color:#090909;
-  display:block;
-  padding:20px;
-  text-align:center;
-  transition: all 0.2s linear;
-}
-
-.read-more-button:hover,
-.read-more-button a:hover{
-  color:#cd3333
-}
-
-#comic a{
-  color:white;
-  text-decoration:none;
-}
-
-#comic a:hover{
-  text-decoration:none;
-}
