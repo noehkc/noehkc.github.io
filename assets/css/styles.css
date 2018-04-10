@@ -4,7 +4,6 @@ body {
   font-family:'Rajdhani', sans-serif;
   letter-spacing:1.6px;
   overflow-x:hidden;
-  
 }
 
 #intro {
@@ -18,9 +17,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%; 
-  opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+  min-width: 100%;
 }
 
 
@@ -64,6 +61,19 @@ body {
   position:relative;
 }
 
+@media only screen and (max-width: 1200px) {
+  .about-heading {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-heading {
+    font-size: 60px;
+  }
+}
+
+
 .sub-head {
   position:relative;
   text-align:center;
@@ -73,6 +83,19 @@ body {
   font-size:18px;
   display:block;
   letter-spacing:5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sub-head {
+    font-size: 14px;
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sub-head {
+    font-size: 12px;
+  }
 }
 
 .about-p {
@@ -100,9 +123,27 @@ body {
 #events h1, #team h1, #contact h1, #comic h1 {
   color:#E4D9C4;
   text-align:center;
-  font-size:120px;
+  font-size: 120px;
   font-weight:bold;
   text-transform:uppercase;
+}
+
+@media only screen and (max-width: 1200px) {
+  #events h1, #team h1, #contact h1, #comic h1 {
+    font-size: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #events h1, #team h1, #contact h1, #comic h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #events h1, #team h1, #contact h1, #comic h1 {
+    font-size: 40px;
+  }
 }
 
 #team {
@@ -229,18 +270,47 @@ span.event-day {
 }
 
 ul.event-details {
+  display: flex;
+  align-items: center;
   list-style-type:none;
   margin:0;
   padding:0;
 }
 
+@media (max-width: 576px) {
+  ul.event-details {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 ul.event-details li {
-  float:left;
+  white-space: nowrap;
   margin-right:15px;
+}
+
+ul.event-details li:last-child {
+  margin-right: 0;
 }
 
 .event-info p {
   clear:both;
+}
+
+.event-info {
+  /* Some styles for .event-info here */
+}
+
+@media (max-width: 576px) {
+  .event-info {
+    text-align: center;
+  }
+  .col-10.col-md-10.event-info {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }  
 }
 
 /*sponsors css*/
@@ -418,6 +488,23 @@ ul.event-details li {
     padding-bottom:25px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .carousel-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carousel-nav a {
+    margin-bottom: 16px;
+    height: 28px;
+  }
+
+  .carousel-nav a.active {
+    padding-bottom: 0px;
+  }
+}
+
 .row-gallery {
   display:-ms-flexbox;
   display:flex;
@@ -470,6 +557,12 @@ ul.event-details li {
   text-decoration:none;
   color:#cd3333;
 }
+@media (max-width: 576px) {
+  .embedded {
+    text-align: center;
+  }
+}
+   
 
 /*Comic Slider*/
 .carousel {
