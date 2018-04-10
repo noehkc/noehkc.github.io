@@ -4,6 +4,7 @@ body {
   font-family:'Rajdhani', sans-serif;
   letter-spacing:1.6px;
   overflow-x:hidden;
+  
 }
 
 #intro {
@@ -18,6 +19,8 @@ body {
   top: 0;
   left: 0;
   min-width: 100%; 
+  opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 
