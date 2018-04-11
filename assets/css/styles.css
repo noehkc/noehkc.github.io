@@ -238,7 +238,11 @@ ul.contact-list li {
   transition: all 0.2s linear;
 }
 
-
+.in-the-news h5{
+  font-size:20px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
 
 .row-striped a{
   color:#101010;
