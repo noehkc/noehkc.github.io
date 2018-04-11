@@ -47,6 +47,10 @@ body {
   padding-top:120px;
 }
 
+#about img{
+  margin-bottom:50px;
+}
+
 .container.about-us {
   background-image:url(../../assets/img/absctractbg.png);
   background-repeat:no-repeat;
@@ -60,6 +64,7 @@ body {
   text-transform:uppercase;
   position:relative;
 }
+
 
 @media only screen and (max-width: 1200px) {
   .about-heading {
