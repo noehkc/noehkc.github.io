@@ -227,19 +227,18 @@ ul.contact-list li {
 .footer a{
   color:#E4D9C4;
 }
-.footer .fa{
-  font-size:18px;
+.embedded .fa{
+  color:#cd3333;
+  font-size:24px;
   display:block;
   float:left;
   background-color:#0a0a0a;
   padding:10px;
-  margin-right:20px;
+  margin-right:5px;
   transition: all 0.2s linear;
 }
 
-.footer .fa:hover{
-  color:#cd3333
-}
+
 
 .row-striped a{
   color:#101010;
@@ -567,7 +566,8 @@ ul.event-details li:last-child {
     text-align: center;
   }
 }
-   
+
+
 
 /*Comic Slider*/
 .carousel {
